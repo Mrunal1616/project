@@ -9,8 +9,8 @@ pipeline{
 		}
 		stage('Build'){
 			steps{
-				sh 'chmod a+X mvnw'
-				sh './mvnw clean package - DskipTests=true'
+				sh 'chmod a+x mvnw'
+				sh './mvnw clean package -DskipTests=true'
 			}
 			post{
 				always{
